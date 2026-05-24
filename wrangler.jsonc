@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mfe",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-05-24",
+  "observability": {
+    "enabled": true
+  },
+  "services": [
+    {
+      "binding": "ACCOUNT_APP",
+      "service": "mfe-account"
+    },
+    {
+      "binding": "ORDER_APP",
+      "service": "mfe-order"
+    }
+  ]
+}
